@@ -188,6 +188,13 @@ questions:
                   required: true
                   hidden: true
                   editable: false
+              - variable: setPermissions
+                label: "Automatic Permissions"
+                description: "Automatically set permissions on install"
+                schema:
+                  type: boolean
+                  default: true
+                  hidden: false 
               - variable: emptyDir
                 label: "emptyDir"
                 schema:
@@ -227,18 +234,25 @@ questions:
           schema:
             type: dict
             attrs:
+              - variable: setPermissions
+                label: "Automatic Permissions"
+                description: "Automatically set permissions on install"
+                schema:
+                  type: boolean
+                  default: false
+                  hidden: true
               - variable: hostPath
                 label: "Path to Z-Wave device on host"
                 schema:
                   type: path
                   required: true
-                  default: "/dev/ttyAMC0"
+                  default: "/dev/ttyUSB0"
               - variable: mountPath
                 label: "Path to mount device inside the container"
                 schema:
                   type: path
                   required: true
-                  default: "/dev/ttyAMC0"
+                  default: "/dev/ttyUSB0"
   # Enable privileged
   - variable: securityContext
     group: "Volume Mounts"

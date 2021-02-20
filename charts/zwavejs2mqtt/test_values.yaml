@@ -62,7 +62,6 @@ probes:
 service:
   port:
     port: 8091
-    nodePort: 30091
 
 # Privileged may be required if USB controller is accessed directly through the host machine
 # securityContext:
@@ -114,11 +113,16 @@ appVolumeMounts:
   config:
     enabled: true
     emptyDir: true
+    setPermissions: true
     mountPath: "/config"
 
+appAdditionalServicesEnabled: true
 appAdditionalServices:
   ws:
     enabled: true
+    type: ClusterIP
     port: 
       port: 3000
-    type: "ClusterIP"
+      name: ws
+      protocol: TCP
+      targetPort: 3000

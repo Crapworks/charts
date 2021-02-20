@@ -64,7 +64,6 @@ service:
   port:
     name: webui
     port: 8091
-    nodePort: 38091
 
 # Privileged may be required if USB controller is accessed directly through the host machine
 # securityContext:
@@ -133,5 +132,8 @@ appAdditionalServices:
   ws:
     enabled: true
     type: ClusterIP
-    port:
+    port: 
       port: 3000
+      name: ws
+      protocol: TCP
+      targetPort: 3000
