@@ -2,7 +2,7 @@ apiVersion: v2
 appversion: 0.2.0.351
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
-version: 1.3.0
+version: 1.3.1
 upstream_version: 1.1.1
 keywords:
   - readarr
@@ -21,4 +21,3 @@ dependencies:
   - name: common
     repository: https://charts.truecharts.org/
     version: 1.3.0
-    

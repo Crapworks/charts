@@ -1,3 +1,1 @@
-# Sonarr
-
-Sonarr chart is a chart designed to deploy Sonarr in a TrueNAS SCALE kubernetes cluster.
+Smart PVR for newsgroup and bittorrent users

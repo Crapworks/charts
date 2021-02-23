@@ -1,3 +1,1 @@
-# Radarr
-
-Radarr chart is a chart designed to deploy Radarr in a TrueNAS SCALE kubernetes cluster.
+A fork of Sonarr to work with movies à la Couchpotato

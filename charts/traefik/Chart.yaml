@@ -2,7 +2,7 @@ apiVersion: v2
 name: traefik
 description: A Traefik based Kubernetes ingress controller
 type: application
-version: 1.0.0
+version: 1.0.1
 upstream_version: 9.14.2
 appVersion: 2.4.2
 keywords:
@@ -22,4 +22,3 @@ dependencies:
   - name: reflector
     repository:  "https://emberstack.github.io/helm-charts"
     version: 5.4.17
-

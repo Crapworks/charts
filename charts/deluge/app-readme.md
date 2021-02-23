@@ -1,1 +1,1 @@
-The deluge App is designed to deploy deluge in a TrueNAS SCALE kubernetes cluster.
+Deluge is a torrent download client

@@ -1,3 +1,1 @@
-# Bazarr
-
-Bazarr chart is a chart designed to deploy Bazarr in a TrueNAS SCALE kubernetes cluster.
+Bazarr is a companion application to Bazarr and Radarr. It manages and downloads subtitles based on your requirements

@@ -1,3 +1,1 @@
-# zwavejsmqtt
-
-This is an EXPERIMENTAL chart designed to test deploying zwavejsmqtt in a TrueNAS SCALE kubernetes cluster.
+Fully configurable Zwave to MQTT gateway and Control Panel using NodeJS and Vue
